@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm Patryk</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fasthand&family=Montserrat&display=swap" rel="stylesheet">
+    <link href='https://css.gg/menu.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/all.css">
+    <link rel="stylesheet" href="/webfonts/">
+</head>
+
+<body>
+<div class="container">
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+                <i class="gg-menu"></i>
+        </label>
+            <label class="logo">pm</label>
+            <ul class="options">
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#aboutmepage">About</a></li>
+                <li><a href="#cont">Contact</a></li>
+                <li><a class="buttonsub" href="#subs">Subscribe</a></li>
+            </ul>
+    </nav>
+    <section id="home">
+        <div class="iam">
+            <p class="myname">Hi, my name is </p>
+            <a class="iamtxt" href="#">Patryk Miller.</a>
+            <p class="build">I build things for the web.</p>
+            <a class="focus" href="#">I'm a frontend developer. Currently, I'm focused on building website.</a>
+        </div>
+        <div class="frontimage">
+            <img class="frontimages" src="images/designman.jpg" alt="">
+        </div>
+    </section>
+    <section class="about">
+        <div id="aboutmepage">
+            <h1 class="aboutme">About me.</h1>
+            <p class="nice">Nice to see you here!</p>
+            <br>
+            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis veniam fugiat repellat architecto inventore, fugit ipsum at alias, asperiores fuga explicabo voluptatibus autem officiis iure maiores placeat, ullam eum magni!</p>
+        </div>
+        <div class="picture">
+            <img class="imgmen" src="images/peoplefront.jpg" alt="">
+        </div>
+    </section>
+    <section id="cont">
+        <div class="boxcontact">
+            <img class="contactimg" src="images/contactimg.jpg" alt="">
+            <div class="forms">
+                <h1 class="sendme">Get in touch.</h1>
+                <form action="https://formsubmit.co/xc3mill@gmail.com" method="POST">
+                    <div class="input-box">
+                        <label>Enter your name.</label><br>
+                        <input type="text" name="name" placeholder="Name" required>
+                    </div>
+                    <div class="input-box">
+                        <label>Enter your email.</label><br>
+                        <input type="email" name="email" placeholder="E-mail" required><br>
+                    </div>
+                    <div class="message-box">
+                        <label class="yourmessage">Your message</label><br>
+                        <textarea></textarea><br>
+                        <button type="submit">Send message</button>
+                        <!-- <button type="submit" value="Send message."> -->
+                    </div>
+                </form>
+            </div>
+        </div>
+        <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#761bec" fill-opacity="1" d="M0,288L80,261.3C160,235,320,181,480,186.7C640,192,800,256,960,234.7C1120,213,1280,107,1360,53.3L1440,0L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+
+    </section>
+    <!-- <section id="subs">
+        <!-- <div class="quiz-container" id="quiz">
+            <div class="quiz-header">
+                <h2 class="qeue" id="question">question text</h2>
+                <ul>
+                    <li>
+                        <input type="radio" name="answer" id="a" class="answer">
+                        <label for="a" id="a_text">Answer</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="b" class="answer">
+                        <label for="b" id="b_text">Answer</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="c" class="answer">
+                        <label for="c" id="c_text">Answer</label>
+                    </li>
+                </ul>
+            </div>
+        <button class="quizbutton" id="Submit">Submit</button>
+        </div> -->
+    </section>   -->
+</div>
+   <footer>
+       <div class="icon">
+            <label class="icon">
+                <a class="icons" href="#"><i class="fab fa-github"></i></a>
+                <a class="icons" href="#"><i class="fab fa-instagram"></i></a>
+                <a class="icons" href="#"><i class="fab fa-linkedin"></i></i></a>
+            </label>
+       </div>
+       
+        <div class="likebutton">
+            <button class="liked" type="button" onClick="onClick()">
+                <p><span class="love">❤️</span>Like!<a id="clicks">0</a></p>
+            </button>
+        </div>
+   </footer>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="app.js"></script>
+</body>
+</html> 

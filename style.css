@@ -1,0 +1,460 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  color: rgb(255, 255, 255);
+  font-family: "Montserrat", sans-serif;
+}
+header {
+  position: absolute;
+}
+body {
+  /* background: rgb(0, 0, 0); */
+  background: rgb(65, 65, 65);
+  /* transition: 0.5s ease-in-out; */
+}
+
+/* ? FIRST PAGE  */
+
+.buttonsub {
+  background-color: #761bec;
+  padding: 5px 10px 5px 10px;
+  border-radius: 15px 0px 12px 0px;
+}
+.buttonsub:hover {
+  color: black;
+}
+nav {
+  background-color: transparent;
+  height: 50px;
+  width: 100%;
+  /* animation: slidefromtop 1.5s ease-in; */
+}
+/* @keyframes slidefromtop {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+} */
+label.logo {
+  font-family: "Fasthand", cursive;
+  font-size: 60px;
+  padding: 0px 70px;
+  line-height: 50px;
+  background-image: linear-gradient(45deg, #761bec, rgb(219, 10, 247));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+nav {
+  position: absolute;
+}
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 50px;
+  margin: 0 5px;
+}
+nav ul li a {
+  font-size: 17px;
+  /* text-transform: uppercase; */
+}
+a.active,
+a:hover {
+  color: #7f2deb;
+  transition: 0.5s;
+}
+.checkbtn {
+  padding: 25px;
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+  float: right;
+  line-height: 80px;
+  /* margin-right: 40px;  */
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+
+/*  ! SCREEN SIZE SETTING  */
+
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 40px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 15px;
+  }
+}
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  #home {
+    display: block;
+    padding: 10px;
+  }
+  .iam {
+    margin-top: -120px;
+    margin-left: -200px;
+    text-align: center;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgb(43, 42, 42);
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+  }
+
+  nav ul li {
+    display: block;
+  }
+  nav ul li a {
+    font-size: 20px;
+    margin: 50px 0px;
+    line-height: 30px;
+  }
+  a:hover,
+  a.active {
+    color: #761bec;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+/* ? FIRST PAGE TITLE AND IMAGE */
+.imgmen {
+  height: 400px;
+  width: 700px;
+  margin-left: 20px;
+  margin-right: 30px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  transition: 0.3s ease;
+}
+.imgmen:hover {
+  height: 405px;
+  width: 705px;
+}
+.frontimages {
+  height: 400px;
+  width: 700px;
+  margin-right: 30px;
+  margin-top: 180px;
+  margin-left: 50px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  /* animation: slidefromtop 1.5s ease-in; */
+  /* transition: 0.3s ease; */
+}
+/* .frontimages:hover {
+  height: 405px;
+  width: 705px;
+} */
+/* @keyframes slidefromtop {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+} */
+.iam {
+  padding-right: 20px;
+  padding-top: 270px;
+  margin-left: 80px;
+}
+
+.myname {
+  font-size: 17px;
+  font-family: "IBM Plex Mono", monospace;
+  color: rgb(255, 255, 255);
+  cursor: text;
+}
+.iamtxt {
+  font-size: 60px;
+  font-weight: 900;
+  font-family: "Montserrat", sans-serif;
+  background-image: linear-gradient(45deg, #761bec, rgb(219, 10, 247));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  transition: 0.2s;
+  cursor: text;
+}
+
+.build {
+  font-size: 50px;
+  font-weight: 900;
+  font-family: "Montserrat", sans-serif;
+  /* background-image: linear-gradient(0deg, #ffffff, rgb(82, 80, 80));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent; */
+  color: whitesmoke;
+  padding-bottom: 20px;
+}
+a.focus {
+  font-size: 19px;
+  color: whitesmoke;
+  /* transition: 0.5s; */
+}
+a.focus:hover {
+  color: white;
+  cursor: text;
+}
+
+.man {
+  height: 400px;
+  width: 550px;
+}
+.texts {
+  padding-right: 20px;
+}
+/*  ! SCROLLING SETTING !  */
+section {
+  height: 100vh;
+  display: flex;
+  scroll-snap-align: start;
+}
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+/* ? SECOND PAGE SETTING !  */
+section.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px;
+}
+#aboutmepage {
+  position: relative;
+  top: -100px;
+}
+.picture {
+  position: relative;
+  top: -70px;
+}
+.aboutme {
+  margin-left: 30px;
+  font-size: 60px;
+  background-image: linear-gradient(45deg, #761bec, rgb(219, 10, 247));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+.desc {
+  margin-left: 30px;
+  font-size: 18px;
+  padding-right: 10px;
+}
+.nice {
+  margin-left: 30px;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+/* ? FOOTER SETTING  */
+footer {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  background-color: transparent;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+.icon {
+  font-size: 25px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.wave {
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+a.icons {
+  padding: 5px;
+  transition: 0.2s ease-in-out;
+  background-color: none;
+  border-radius: 10px;
+}
+.icons:hover {
+}
+.likebutton {
+  display: flex;
+  position: absolute;
+  right: -75px;
+  bottom: 80px;
+  /* transform: rotate(0deg); */
+  transition: right 0.25s ease-out 0s;
+}
+.likebutton:hover {
+  right: 0px;
+}
+.love {
+  padding-right: 20px;
+  padding-left: 15px;
+}
+.likebutton button p {
+  border-radius: 20px 0px 0px 0px;
+  padding: 8px 15px 8px 0px;
+  color: crimson;
+  font-size: 16px;
+}
+.likebutton button a {
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.likebutton button {
+  border-radius: 20px 0px 0px 20px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* ?  THEERD PAGE !  */
+.boxcontact {
+  display: flex;
+  /* background-color: gray;
+  border-radius: 20px; */
+}
+#cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contactimg {
+  margin-right: 100px;
+  height: 500px;
+  width: 600px;
+  border-radius: 30px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.sendme {
+  font-size: 50px;
+  background-image: linear-gradient(45deg, #761bec, rgb(219, 10, 247));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  padding-bottom: 20px;
+}
+input:focus {
+  color: black;
+}
+textarea:focus {
+  color: black;
+  padding-left: 10px;
+}
+.input-box {
+  margin-bottom: 10px;
+}
+
+.input-box input {
+  color: black;
+  height: 40px;
+  width: 350px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.input-box label {
+  font-size: 14px;
+  padding-left: 5px;
+}
+.message-box textarea {
+  height: 200px;
+  width: 350px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  color: black;
+}
+
+.message-box {
+  margin-top: 10px;
+}
+.message-box button {
+  padding: 5px 20px 5px 20px;
+  margin-top: 10px;
+  color: white;
+  font-size: 15px;
+  background-color: #761bec;
+  border: none;
+  border-radius: 15px 0px 12px 0px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.message-box input:hover {
+  color: black;
+  background-color: white;
+}
+.yourmessage {
+  padding-left: 5px;
+}
+#subs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.quiz-container {
+  background-color: bisque;
+  width: 600px;
+  border-radius: 10px;
+}
+.quiz-header {
+  padding: 20px;
+}
+.qeue {
+  padding: 1rem;
+  text-align: center;
+  margin: 0;
+}
+.quizbutton {
+  background-color: cadetblue;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  padding: 1.1rem;
+  display: block;
+  color: black;
+}
+.quizbutton:hover {
+  background-color: rgb(72, 119, 121);
+}
+.quizbutton:focus {
+  /* color after press */
+  background-color: chartreuse;
+}
